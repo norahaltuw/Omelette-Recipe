@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta content="viewport" name="width=device-width,initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap" rel="stylesheet">
+<style>
+body{
+  background-color: hsl(30, 54%, 90%);
+  display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          margin: 0;
+}
+.main{
+  background-color: hsl(0, 0%, 100%);
+  width:600px;
+  height: 1520px;
+  border-radius: 15px;
+
+}
+.image{
+  width:560px;
+  height:250px;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+h1{
+  color:hsl(24, 5%, 18%);
+  font-family: Young Serif;
+  font-weight: 400;
+  margin-left: 20px;
+  margin-bottom: 0px;
+}
+.p1{
+  color: hsl(30, 10%, 34%);
+  font-size: 11px;
+  font-family: Outfit;
+    margin-left: 20px;
+line-height: 1.8;
+}
+.container{
+  background-color: hsl(330, 100%, 98%);
+  width:560px;
+  height:200px;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+.head2{
+color: hsl(332, 51%, 32%);
+  font-family: Outfit;
+  font-weight: 600;
+  padding-top:20px;
+  padding-left: 20px;
+}
+.list{
+  line-height: 2;
+  list-style-type: none; /* Remove default bullets */
+  padding-left: 20px;
+}
+
+      .l1 {
+          position: relative; /* reference base for any absolute element*/
+          margin: 10px 0;
+          padding-left: 40px;
+          color: hsl(30, 10%, 34%); /* text color*/
+          font-family: Outfit;
+          font-size: 15px;
+      }
+      .l1 ::before { /* create the bullet point*/
+        content: ''; /* create empty space for the bullet point*/
+        position: absolute; /* place element inside relative*/
+        left: 0;/*place bullet point far left of the list*/
+        top: 50%;/* place bullet point in the center*/
+        width: 5px;
+        height: 5px;
+        background-color: hsl(332, 51%, 32%); /* Custom bullet color */
+      border-radius: 50%; /* Make the bullet circular */}
+      h2{
+        font-family: Young Serif;
+        margin-left: 20px;
+        color: hsl(14, 45%, 36%);
+        font-size: 25px;
+      }
+.list2{
+  line-height: 2;
+  list-style-type: none;
+  padding-left: 20px;
+
+}
+.l2{
+    position: relative;
+    margin: 10px 0;
+    padding-left: 35px;
+    color: hsl(30, 10%, 34%);
+          font-family: Outfit;
+          font-size: 15px;
+}
+.l2::before{
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background-color: hsl(332, 51%, 32%);
+  top: 35%;
+  left: 0;
+
+}
+hr{
+  border: none;
+  width: 500px;
+  border-top: 1.4px solid hsl(30, 18%, 87%);
+}
+.list3{
+
+  line-height: 1.7;
+  list-style-type: none;
+  padding-left: 20px;
+}
+.list3 .l3 {
+        position: relative;
+        margin: 10px 0;
+        padding-left: 35px; /* Space for custom number */
+    }
+.list3 .l3::before {
+          content: counter(item) ". ";
+          counter-increment: item; /* Increment the counter */
+          left: 0;
+          position: absolute;
+          top: 0;
+          font-weight: bold;
+          transform: translateY(0%);
+          color: hsl(332, 51%, 32%);
+              font-family: Outfit;
+              font-size: 15px;
+              margin-left: 5px;
+
+      }
+      .list3 {
+           counter-reset: item; /* Reset the counter for the list */
+       }
+       .l3{
+           color: hsl(30, 10%, 34%);
+             font-family: Outfit;
+               font-size: 12px;
+       }
+       .nutrition-table{
+                   width: 86%;
+                   border-collapse: collapse;
+margin-left: 38px;
+
+
+               }
+
+               .nutrition-table th, .nutrition-table td {
+                          padding: 8px;
+                          text-align: left;
+
+                      }
+                      .nutrition-table th{
+                                font-weight: normal;
+                                color: hsl(30, 10%, 34%);
+                                font-family: Outfit;
+                                font-size: 12px;
+                                border: none;
+                              border-bottom: 1.4px solid hsl(30, 18%, 87%);
+                              padding-left: 25px;
+                            }
+.nutrition-table td{
+    border: none;
+  border-bottom: 1.4px solid hsl(30, 18%, 87%);
+  font-family: Outfit;
+  font-size: 12px;
+  color: hsl(14, 45%, 36%);
+  font-weight: 600;
+}
+.nutrition-table tr:last-child th,
+.nutrition-table tr:last-child td {
+            border-bottom: none;
+        }
+
+
+
+
+
+
+
+</style>
+</head>
+<body>
+<div class="main">
+<img src="image-omelette.jpeg" alt="Omelette" class="image">
+<h1>Simple Omelette Recipe</h1>
+<p class="p1">An easy and quick dish, perfect for any meal. This classic omelette combined beaten eggs<br>cooked to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
+<div class="container">
+<h4 class="head2">Preparation time</h4>
+<ul class="list">
+<li class="l1"><b>Total:</b> Approximately 10 minutes</li>
+<li class="l1"><b>Preparation:</b> 5 minutes</li>
+<li class="l1"><b>Cooking:</b> 5 minutes</li>
+</ul>
+</div>
+<h2>Ingredients</h2>
+<ul class="list2">
+<li class="l2">2-3 large eggs</li>
+<li class="l2">Salt, to taste</li>
+<li class="l2">Pepper, to taste</li>
+<li class="l2">1 tabclass="l2"lespoon of butter or oil</li>
+<li class="l2">Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+</ul>
+<hr>
+<h2>Instructions</h2>
+<ol class="list3">
+<li class="l3"><b>Beat the eggs:</b> In a bowl, beat the eggs with a pinch of salt and pepper until they are<br>well mixed. You can add a tablespoon of water or milk for a fluffer texture.</li>
+<li class="l3"><b>Heat the pan:</b> Place a non-stick frying pan over medium heat and add butter or oil.</li>
+<li class="l3"><b>Cook the omelette:</b> Once the butter is melted and bubbling, pour in the eggs. Tilt the<br>pan to ensure the eggs evenly coat the surface.</li>
+<li class="l3"><b>Add fillings(optional):</b> When the eggs begin to set at the edges but are slightly<br>runny in the middle, sprinkle your chosen fillings over one half of the omelette.</li>
+<li class="l3"><b>Fold and serve:</b> As the omelette continues to cook, carefully lift one edge and fold it<br>over the fillings. Let it cook for another minute, then slide it onto a plate.</li>
+<li class="l3"><b>Enjoy:</b> Serve hot, with additional salt and pepper if needed.</li>
+</ol>
+<hr>
+<h2>Nutrition</h2>
+<p class="p1">The table below shows nutritional values per serving without the addtional fillings.</p>
+<table class="nutrition-table">
+  <tr>
+    <th>Calories</th>
+    <td>277kcal</td>
+</tr>
+<tr>
+<th>Carbs</th>
+<td>0g</td>
+</tr>
+<tr>
+<th>Protein</th>
+<td>20g</td>
+</tr>
+<tr>
+<th class="lastrow">Fat</th>
+<td>22g</td>
+</tr>
+</table>
+</div>
+</body>
+</html>
